@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="scroll2">
+<head lang="zh">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页 - 仿知乎</title>
+  <link rel="stylesheet" type="text/css" href="style/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style/home-mini.css">
+</head>
+<body class='body'>
+  <!-- 导航栏 -->
+  <div class="nav">
+    <div class="nav-wrapper">
+      <a class="logo" href="home.html"></a>
+      <form method="get" action="#" id="nav-serch-form" class="nav-search-form">
+        <input type="text" class="nav-search-input" placeholder="搜索问题、话题或人">
+        <button type="submit" class="nav-search-button">
+          <i class="fa fa-search nav-search-icon"></i>
+        </button>
+      </form>
+      <div class="nav-search-list">
+        <ul class="nav-search-ul">
+          <li class="nav-search-li"><a href="#">首页</a></li>
+          <li class="nav-search-li"><a href="#">话题</a></li>
+          <li class="nav-search-li"><a href="#">发现</a></li>
+          <li class="nav-search-li"><a href="#">消息</a></li>
+        </ul>
+      </div>
+      <div class="nav-profile">
+        <a href="#" class="nav-profile-link">
+          <img class="nav-profile-link-img" src="img/user.jpg" width="25px" height="25px">
+          <span class="nav-profile-link-name">Kaia</span>
+        </a>
+        <div class="nav-profile-dropdown">
+          <a href="#" class="nav-profile-dropdown-link"><i class="fa fa-user"></i>我的主页</a>
+          <a href="#" class="nav-profile-dropdown-link"><i class="fa fa-envelope-o"></i>私信</a>
+          <a href="#" class="nav-profile-dropdown-link"><i class="fa fa-cog"></i>设置</a>
+          <a href="#" class="nav-profile-dropdown-link"><i class="fa fa-power-off"></i>退出</a>
+        </div>
+      </div>
+      <button class="nav-question-button">提问</button>
+    </div>
+  </div>
+
+  <!-- 页面主体 -->
+  <div class="main">
+    <!-- 最新动态 -->
+    <div class="main-content">
+      <div class="main-content-title">
+        <span class="main-content-title-news"><i class="fa fa-list-alt"></i>最新动态</span>
+        <span class="main-content-title-link"><i class="fa fa-cog"></i>设置</span>
+      </div>
+      <a class="main-content-update" href="#">
+        10条新动态
+      </a>
+      <div class="main-content-detail">
+        <div class="main-content-section">
+          <div class="main-content-avatar">
+            <a href="https://www.zhihu.com/people/sunny-45-9-91/activities" class="main-content-avatar-link">
+              <img class="main-content-avatar-img" src="img/avatar.jpg">
+            </a>
+          </div>
+          <div class="main-content-source">
+            <a href="https://zhuanlan.zhihu.com/p/36445010" class="main-content-source-name">sunny</a>
+              赞同该回答
+            <span class="main-content-source-time">26分钟前</span>
+            <div class="main-content-answer">
+              <a href="https://www.zhihu.com/people/sunny-45-9-91/activities" class="main-content-answer-question">Webpack基本架构浅析</a>
+              <i class="main-content-answer-close fa fa-times"></i>
+              <div class="display-ignore"><span>不再显示</span></div>
+              <div class="main-content-answer-detail">
+                <div class="main-content-answer-author">
+                  <a href="https://www.zhihu.com/people/zhu-xiao-ran-47-68">Gloria</a>
+                  <span>FE Engineer，除了写代码，几乎都在打篮球</span>
+                </div>
+                <div class="main-content-answer-box">
+                  <div class="main-content-answer-part">
+                    <img src="img/paper.jpg" class="main-content-answer-img-sm">
+                    <b>为什么Webpack</b><br/>
+                    目前为止，Webpack已经拥有39.9k的star，在前端代码打包器领域内应该算是无敌的存在了吧。Webpack强大的生态圈和丰富的解决方案使得我们在日常开发中很难逃脱它的魔爪。如果能学习到它背后的思路...
+
+                    <a href="#" class="show-all-link">显示全部</a>
+                    <a class="main-content-answer-vote">362</a>
+                  </div>
+                  <div class="main-content-answer-all">
+                    <img src="img/paper.jpg" class="main-content-answer-img-md">
+                    <p class='subtitle'>文章webpack版本为3.6.0</p>
+                    <h1>前言</h1>
+                    <p>随着掌握的前端基础知识越来越多，对技术的要求逐渐不满足于实现即可，技术到了瓶颈期，自己也曾尝试写过一些开源库，不过很少有满意的作品，通常没迭代几个版本就没有耐心继续维护了。通常是面临的情形是前期设计思路太过简单导致后期扩展的时候需要重构大量的代码（GG吧~），就好比一坨屎，再怎么装点，都很难把它当成蛋糕吃下去。
+
+我认为，突破这个瓶颈的关键就是学会深入理解优秀开源库背后的思路。有人可能会说，我用xxx已经很久了，能够熟练使用它解决各种棘手问题，对于它，我已经充分理解了。我想说的是，即便你对于它的使用已经达到了炉火纯青的程度，但是站在使用者角度理解再“深”能有多深呢，不过是坐井观天罢了。
+                    <br/><h1>为什么Webpack</h1>
+                    <p>目前为止，Webpack已经拥有39.9k的star，在前端代码打包器领域内应该算是无敌的存在了吧。Webpack强大的生态圈和丰富的解决方案使得我们在日常开发中很难逃脱它的魔爪。如果能学习到它背后的思路，对于技能树的完善和水平层次的提高应该是非常有好处的。</p>
+                    <h1>概要</h1>
+                    <p>如果要全面总结webpack的实现，估计写10篇文章都不一定够。为了更加清晰地get到webpack的设计思路，会隐去webpack的大部分功能实现。</p>
+                  <br/><p>以实现简单的js模块打包功能为背景，文章分为3部分：<p/>
+                    <ol>
+                      <li>    BundleBuilder基本架构</li>
+                      <li>Webpack基本架构</li>
+                      <li>学到了些什么</li>
+                    </ol>
+                    <p>相信你在阅读完本文后会对Webpack的架构有个大概的了解，这应该会对你继续深入理解webpack其它功能的实现以及编写插件会有所帮助。</p>
+                    <h1>BundleBuilder基本架构</h1>
+                    <p class='subtitle'>简单到不能再简单的js模块打包器</P>
+                    <h2>示意图</h2>
+                    <img alt='示意图' src='img/paper2.jpg'>
+                    <br/><h2>BundleBuilder对象</h2>
+                    <ol>
+                      <li>BundleBuilder对象接收并处理外部配置</li>
+                      <li>根据配置选择不同的ModuleResolver</li>
+                      <li>使用ModuleResolver接收配置得到最终文件内容</li>
+                      <li>生成打包后的文件</li>
+                    </ol>
+
+                    <button class="collapse-button"><span><i class="fa fa-minus"></i><i class="fa fa-arrow-up"></i></span>收起</button>
+                    <button class="up" title="赞同">
+                      <i class="fa fa-sort-asc"></i><span class="up-count">477</span>
+                    </button>
+                    <button class="down" title="反对，不会显示你的姓名"><i class="fa fa-sort-desc"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 侧边栏 -->
+    <div class="main-sidebar">
+      <div class="main-sidebar-ad">
+        <a href="#"></a>
+      </div>
+      <div class="main-sidebar-section">
+        <ul class="main-sidebar-lists">
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-file-o"></i>我的草稿</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-bookmark-o"></i>我的收藏</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-check-square-o"></i>我关注的问题</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-file-text-o"></i>邀请我回答的问题</a>
+          </li>
+        </ul class="main-sidebar-lists">
+      </div>
+      <div class="main-sidebar-section">
+        <ul class="main-sidebar-lists">
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-book"></i>所有问题</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-th-large"></i>话题广场</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-th-list"></i>公共编辑动态</a>
+          </li>
+          <li class="main-sidebar-list">
+            <a href="#" class="main-sidebar-link"><i class="fa fa-home"></i>社区服务中心</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-sidebar-footer">
+        <ul>
+          <li><a href="#">刘看山</a></li>
+          <li><a href="#">知乎指南</a></li>
+          <li><a href="#">建议反馈</a></li>
+          <li><a href="#">移动应用</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">加入知乎</a></li>
+          <li><a href="#">知乎协议</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+        <span>© 2018 知乎</span>
+      </div>
+    </div>
+  </div>
+  <!-- 答案中放大后的图片 -->
+  <div class="main-content-answer-img-box">
+    <img src="img/answer.lg.jpg" class="main-content-answer-img-lg">
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/home-mini.js"></script>
+</body>
+
+</html>

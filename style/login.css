@@ -1,0 +1,230 @@
+*{
+  padding:0;
+  margin:0;
+  font-family:sans-serif;
+}
+body{
+  position: relative;
+  line-height: 1.6em;
+  background-color:#fff;
+}
+#box1{
+  display:block;
+  text-align: center;
+  width:320px;
+  margin:0 auto;
+}
+h1{
+  margin:5px auto;
+  background-color: #fff;
+  width:45%;
+  padding:10px;
+}
+h1 img{
+  width:100%;
+}
+p{
+  padding:10px;
+  color:#0082DB;
+  font-size: 130%;
+  margin-bottom:10px;
+}
+#buttonwrapper{
+  display:inline-block;
+  position:relative;
+  height:1.8em;
+}
+.button1,.button2{
+  padding:0px;
+  text-decoration:none;
+  color:#666;
+  border:none;
+  cursor:pointer;
+  background-color: #fff;
+  font-size: 1.2em;
+  margin:5px;
+  outline:none;
+}
+.active{
+  color:#3996dd;
+}
+
+.sliderbar{
+  position:absolute;
+  bottom:0;
+  background-color:#0082DB;
+  height:2px;
+  width:3.1em;
+  border:none;
+  margin-top:0px;
+  margin-left:0px;
+}
+.sliderbarleft{
+  left:0;
+}
+.sliderbarright{
+  right:0;
+}
+
+#signup,#signin{
+  display:block;
+  background-color:#fff;
+  color:#666;
+  border:none;
+  cursor:pointer;
+  font-size: 100%;
+  outline:none;
+}
+.form{
+  width:320px;
+  border:solid #ddd 1px;
+  border-radius: 3px;
+  margin-top:10px;
+  margin:10px auto;
+}
+.input{
+  padding:20px;
+  text-align: left;
+  border-top:solid #eee 1px;
+}
+.input input{
+  outline: none;
+  border:none;
+  font-size: 1.1em;
+  width:100%;
+}
+.others{
+  width:100%;
+  height:1.5em;
+  margin-top:10px;
+  font-size:0.9em;
+  color:#555;
+}
+.unable-login{
+  float:right;
+}
+.login-remember{
+  float:left;
+}
+
+.signOnclick{
+  background-color:#fff;
+  color:#666;
+  border:none;
+  border-bottom:1px solid #0082DB;
+  cursor:pointer;
+  font-size: 130%;
+  outline:none;
+}
+
+.button3{
+  margin:0 auto;
+  height:50px;
+  width:320px;
+  background-color: #5bb8ff;
+  font-size: 16px;
+  font-weight:bold;
+  color:#fff;
+  border:none;
+  outline: none;
+  cursor:pointer;
+  border-radius:3px;
+  text-shadow:1px 1px 1px rgba(0,0,0,.2)
+}
+#sns-weibo,#sns-weixin,#sns-qq{
+  margin-bottom:-6px;
+  padding:0;
+  margin-left: 30px;
+  display:inline-block;
+  height:20px;
+  width:20px;
+  border:#000;
+  overflow:hidden;
+}
+
+#weibo,#weixin,#qq{
+  width:80px;
+
+}
+
+#weibo{
+  position:relative;
+  left:-44px;
+  cursor:pointer;
+}
+#weibo:hover{
+  position:relative;
+  left:-44px;
+  top:-20px;
+}
+#weibo{
+  position:relative;
+  left:-44px;
+  cursor:pointer;
+}
+#weibo:hover{
+  position:relative;
+  left:-44px;
+  top:-20px;
+}
+#weixin{
+  position:relative;
+  top:-20px;
+  cursor:pointer;
+}
+#weixin:hover{
+  position:relative;
+  left:-22px;
+  top:-20px;
+}
+#qq:hover{
+  position:relative;
+  left:-22px;
+  cursor:pointer;
+}
+
+#sns-login{
+float:left;
+margin-left: 0;
+padding-left: 0;
+font-size: 1em;
+color:#666;
+}
+.qrcode,.download{
+  border:solid #e8e8e8;
+  width:140px;
+  position:absolute;
+  top:15px;
+  right:15px;
+  cursor:pointer;
+  text-align: center;
+}
+.qrcode p{
+  color:#666;
+  font-size: 13px;
+  padding:0;
+}
+
+.downloadimg{
+  display: inline-block;
+  vertical-align: middle;
+  width:22px;
+  height:20px;
+  overflow:hidden;
+  margin:0;
+}
+
+.downloadimg img{
+  margin-left: 5px;
+  position:relative;
+  top:-42px;
+  width:88px;
+}
+.download span{
+  font-size: 13px;
+  color:#555;
+}
+.qrcode img{
+  width:70%;
+  margin-top: 0;
+}
